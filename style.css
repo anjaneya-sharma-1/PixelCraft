@@ -1,0 +1,468 @@
+.nav-header {
+    font-size: 1.5rem;
+}
+
+
+.row {
+    margin-bottom: 0;
+}
+
+#sourceImage {
+    display: none;
+}
+.draggable {
+    cursor: grab;
+}
+
+.draggable.dragging {
+    cursor: grabbing;
+}
+
+.resizable {
+    cursor: se-resize;
+}
+
+.clipart-controls {
+    margin-top: 20px;
+}
+
+.image-preview {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#canvas {
+    max-height: 420px;
+    object-fit: contain;
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav.green {
+    background-color: #d80000; /* Green color */
+    padding: 0 20px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-wrapper.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+ul.right.image-save {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+ul.right.image-save button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-flat.blue.white-text {
+    background-color:  #d80000; /* Blue */
+    color: #fff;
+}
+
+button.btn-flat.blue.white-text:hover {
+    background-color: #1976d2;
+}
+
+button.btn-flat.red.white-text {
+    background-color: #f44336; /* Red */
+    color: #fff;
+}
+
+button.btn-flat.red.white-text:hover {
+    background-color: #d32f2f;
+}
+
+/* Container */
+.container.app {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Help Text */
+.help-text {
+    margin-bottom: 20px;
+}
+
+.help-text h5 {
+    color: #555;
+}
+
+/* Image Preview */
+.image-preview {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image-preview canvas {
+    border: 1px solid #ccc;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Image Controls */
+.image-controls, .preset-filters, .clipart-controls, .file-controls {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.image-controls h6, .preset-filters h6, .clipart-controls h6, .file-controls h6 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2rem;
+    border-bottom: 2px solid  #d80000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Range Fields */
+.range-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.range-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.range-field input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    transition: opacity 0.2s;
+}
+
+.range-field input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background:  #d80000;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.range-field input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background:  #d80000;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.range-field input[type="range"]:hover::-webkit-slider-thumb {
+    background: lightblue;
+}
+
+.range-field input[type="range"]:hover::-moz-range-thumb {
+    background: lightblue;
+}
+
+/* Preset Filters Buttons */
+.preset-filters button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color:  #d80000; /* Green */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.preset-filters button:hover {
+    background-color: lightblue;
+}
+
+/* Clipart Controls */
+.clipart-controls input[type="file"] {
+    margin-top: 10px;
+}
+
+/* File Controls */
+
+
+.file-field.input-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.file-field.input-field .btn.green {
+    background-color:  #d80000;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-field.input-field .btn.green:hover {
+    background-color: lightblue;
+}
+
+.file-field.input-field .file-path-wrapper {
+    flex-grow: 1;
+    position: relative;
+}
+
+.file-field.input-field .file-path-wrapper input.file-path {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.file-field.input-field .file-path-wrapper input.file-path:focus {
+    border-color:  #d80000;
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn.green {
+    background-color:  #d80000;
+    color: #fff;
+}
+
+.btn.green:hover {
+    background-color: lightblue;
+}
+
+.btn.blue {
+    background-color: #d80000;
+    color: #fff;
+}
+
+.btn.blue:hover {
+    background-color: #1976d2;
+}
+
+.btn.red {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.btn.red:hover {
+    background-color: #d32f2f;
+}
+
+.btn.flat {
+    background-color: transparent;
+    color: inherit;
+    padding: 8px 16px;
+}
+
+.btn.flat:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.col.s6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px;
+}
+
+/* Image Save Buttons Alignment */
+.image-save {
+    display: flex;
+    gap: 10px;
+}
+
+/* Clipart Resize Handle */
+canvas {
+    position: relative;
+}
+
+/* Additional Styles */
+button:focus, input:focus, select:focus, textarea:focus {
+    outline: none;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #d80000;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+nav {
+    background-color: #d80000;
+    padding: 10px;
+    color: white;
+}
+
+.nav-header {
+    font-size: 1.5rem;
+}
+
+.upload-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    background-color: #fff;
+}
+
+.file-upload-wrapper {
+    margin-top: 20px;
+}
+
+.file-upload {
+    display: none;
+}
+
+.btn-upload {
+    background-color: #d80000;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-upload:hover {
+    background-color: #7a0d01;
+}
+
+.material-icons {
+    vertical-align: middle;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Editor Section Hidden Initially */
+.editor-section {
+    padding: 20px;
+}
+
+/* Image controls styling */
+.image-controls h6,
+.preset-filters h6,
+.file-controls h6 {
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+/* Buttons styling */
+button {
+    background-color: #d80000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a0d01;
+}
+
+/* Styling for canvas */
+.canvas {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+

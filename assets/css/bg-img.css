@@ -1,0 +1,9 @@
+.bgimg 
+    {
+      background-image: url('../images/login_request/cover.png');
+      min-height: 100vh;
+      
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
