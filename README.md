@@ -2,6 +2,13 @@
 
 A Full-Stack PHP Social Media Application with a Dynamic Pinboard and Advanced Photo Editing Features.
 
+![WhatsApp Image 2025-03-08 at 23 41 30](https://github.com/user-attachments/assets/18503753-b58d-438a-ba5f-eb858e5418a8)
+![WhatsApp Image 2025-03-08 at 23 41 31](https://github.com/user-attachments/assets/05822870-bb77-44f7-b105-84ba4a8b4d86)
+![WhatsApp Image 2025-03-08 at 23 41 57](https://github.com/user-attachments/assets/1d29f7b1-dbc7-4999-b99e-981147e088a2)
+![WhatsApp Image 2025-03-08 at 23 41 57 (1)](https://github.com/user-attachments/assets/07530cae-c989-4047-913f-455801d49f05)
+![WhatsApp Image 2025-03-08 at 23 41 58](https://github.com/user-attachments/assets/01be0771-ad94-4e7f-8162-54403a6502b3)
+![6bac41da-f2e0-4ec1-b902-74d7633c2e53](https://github.com/user-attachments/assets/b8680687-b87d-4bf5-b42a-055255503130)
+
 ## Features
 
 ### 🌟 Core Features
