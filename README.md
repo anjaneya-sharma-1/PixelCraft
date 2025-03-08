@@ -1,40 +1,72 @@
-# 📱 Social Media Application 📱
+# PixelCraft
 
-Welcome to the Social Media Application repository! This project is a dynamic and feature-rich social media platform built using PHP, MySQL, Bootstrap, HTML, CSS, and JavaScript. It provides a powerful and engaging platform for university clubs and organizations to create profiles, connect with friends, share posts, organize events, and interact with a vibrant community of users.
+A Full-Stack PHP Social Media Application with a Dynamic Pinboard and Advanced Photo Editing Features.
 
-🔥 Key Features:
-- User Profiles: Create and customize unique user profiles to showcase club activities and interests.
-- Friend Connections: Connect and interact with friends within the social network.
-- Post Sharing: Share captivating posts, including text, images, and videos, with your community.
-- Events: Organize and join exciting events within your university or organization.
-- Real-time Interactions: Engage in real-time discussions and comments on posts and events.
-- User Notifications: Stay updated with notifications about friend requests, messages, and event invitations.
+## Features
 
-🚀 Getting Started:
-1. Clone this repository to your local machine.
-2. Set up a web server with PHP and MySQL support.
-3. Import the provided database schema to initialize the database.
-4. Customize the application configuration in the `config.php` file.
-5. Start using the application and explore its exciting features!
+### 🌟 Core Features
+- **Dynamic Pinboard**: Share, organize, and interact with posts in an engaging way.
+- **Photo Editing**: Enhance images before posting with built-in editing tools.
 
-🎨 Customizable Design:
-- Utilizes Bootstrap for a responsive and modern user interface.
-- Easily customize the CSS to match your university's branding and preferences.
-- Extendable and flexible architecture to add new features and modules.
+### 🔐 User Authentication
+- **Login & Register**: Secure authentication with email verification.
+- **Profile Management**:
+  - Edit personal details
+  - Update profile and cover photos
+  - View followers and following
 
-📝 Contributions:
-We warmly welcome contributions from the community! Feel free to open issues, suggest improvements, or submit pull requests to enhance the application.
+### 🏆 Social Features
+- **Posts & Captions**: Create and share posts with engaging captions.
+- **Likes & Comments**:
+  - Like and comment on posts
+  - Edit and delete comments
+- **Hashtag Categorization**: Organize and discover posts using hashtags.
+- **Search Feature**: Find posts and people efficiently with advanced filters.
 
-📄 License:
-This project is licensed under the [MIT License](link-to-your-license).
+### 💾 Database & Storage
+- **SQL Database**:
+  - Stores user profiles, posts, comments, likes, and hashtags.
+  - Optimized for fast retrieval and scalability.
+- **File Uploads**: Securely store and manage images.
 
-Experience the power of social networking for university clubs and organizations with this comprehensive application. Connect, share, and engage with your community like never before. If you have any questions or need assistance, please don't hesitate to reach out. Happy networking! 😄
+### 📩 Messaging & Notifications
+- **Mail Feature**: Send email verifications, password resets, and notifications.
+- **Real-Time Notifications**: Receive instant alerts for likes, comments, and follows.
 
-![app](https://github.com/Deshan555/Social-Media-Platform/blob/master/app-Screenshots/Screenshot_11.png)
-![app](https://github.com/Deshan555/Social-Media-Platform/blob/master/app-Screenshots/Screenshot_12.png)
-![app](https://github.com/Deshan555/Social-Media-Platform/blob/master/app-Screenshots/Screenshot_13.png)
-![app](https://github.com/Deshan555/Social-Media-Platform/blob/master/app-Screenshots/Screenshot_14.png)
-![app](https://github.com/Deshan555/Social-Media-Platform/blob/master/app-Screenshots/Screenshot_10.png)
-![app](https://github.com/Deshan555/Social-Media-Platform/blob/master/app-Screenshots/Screenshot_09.png)
+## 🛠 Technology Stack
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
+- **Backend**: PHP
+- **Database**: MySQL
+- **Other**: AJAX, jQuery, Mail Integration
 
+## 🚀 Installation & Setup
+
+### 🔧 Requirements
+- PHP 7.4+
+- MySQL Database
+- Apache Server
+
+### 📌 Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/PixelCraft.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd PixelCraft
+   ```
+3. Configure the database in `config.php`.
+4. Import `database.sql` into MySQL.
+5. Start the development server:
+   ```sh
+   php -S localhost:8000
+   ```
+6. Open the browser and access the application at:
+   ```sh
+   http://localhost:8000
+   ```
+
+---
+
+PixelCraft is designed to deliver a seamless and engaging social media experience. Contributions and improvements are always welcome!
 
